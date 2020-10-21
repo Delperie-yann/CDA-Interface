@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+    <title>Une petite animation CSS</title>
+	
+</head>
+    <style>
+        body {
+            background-image: url("https://media.wired.com/photos/5cd5df1f2948ca2e63b090f0/master/w_1600%2Cc_limit/01_SPoW_051119.jpg");
+            color: green;
+
+        }
+		h1{
+			height: 20px;
+			width: 105%;
+			text-align: center;
+			
+		}
+		h3 {
+			font-size : 25px;
+			margin: 500px 0px;
+			text-align: center;
+			height: 500px;
+			width: 105%;
+			border-radius: 5%;
+			
+			background: content-box radial-gradient(midnightblue, black);
+		}
+		.choose{
+			font-size : 16px;
+			text-align: left;
+			}
+		.title{
+			font-size: 20px;
+			text-align: left;
+			color : green;
+			
+		}
+		.center {
+			height: 350px;
+			max-width: 1980px;
+			margin: fixed;
+			border: 3px solid green;
+			padding: 100px, 100px;
+		}
+		
+		#ball {
+		
+			width: 50px;
+			height: 50px;
+			margin: 100px 850px ;
+			position: relative;
+				border-radius: 50%;
+			background: linear-gradient(35deg, black, gray);
+			box-shadow: 15px -7px 15px black;
+			animation-name: bounce;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			z-index:1
+		}		
+				
+		#ball2 {
+			
+			width: 100px;
+			height: 100px;
+			margin: 80px 850px;
+			position: absolute;
+				border-radius: 50%;
+			background: linear-gradient(15deg, blue, green);
+			animation-name: rotate;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			border: 2px solid blue;
+			z-index:0
+		}
+		#ball3 {
+			width: 20px;
+			height: 20px;
+			margin: -220px 250px;
+			position: absolute;
+				border-radius: 50%;
+			background: linear-gradient(25deg, red, tomato);
+			animation-name: rotate;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			border: 1px solid red;
+			z-index:0
+		}
+		 .stars {
+			margin: -50px 660px;
+			background-color: white;
+			height: 3px;
+			width: 3px;
+			border-radius: 50%;
+			animation-iteration-count: infinite;
+			
+		  }
+
+		  .star-1 {
+			margin: -30px 450px;
+			
+			animation-duration: 1s;
+			animation-name: twinkle;
+		
+		  }
+
+		  .star-2 {
+			margin: -35px 350px;
+			animation-duration: 0.2s;
+			animation-name: twinkle;
+			
+		  }
+
+		  .star-3 {
+			margin: -15px 500px;
+			animation-duration: 0.7s;
+			animation-name: twinkle;
+			
+		}
+		  .star-4 {
+			margin: -35px 950px;
+			animation-duration: 2s;
+			animation-name: twinkle;
+			
+		}
+			.star-5 {
+			margin: -50px 780px;
+			animation-duration: 1.7s;
+			animation-name: twinkle;
+			
+		}	
+			.star-6 {
+			margin: -150px 890px;
+			animation-duration: 0.1s;
+			animation-name: twinkle;
+			
+		}
+
+		  @keyframes twinkle {
+			20% {
+			  transform: scale(0.5);
+			  opacity: 0.5;
+			}
+		  }
+
+		@keyframes bounce{
+			0% {
+				left: -10%;
+				transform :scale(0.6);
+				animation-timing-function: ease-in;
+			}
+			10%{
+				left: -10%;
+				transform :scale(0.7);
+				animation-timing-function: linear;
+			}
+			20%{
+				left: 0%;
+				transform :scale(0.85);
+				opacity: 1;
+				animation-timing-function: ease-out;
+			}
+			40%{
+				left: 10%;
+				transform :scale(0.6);
+				opacity: 1;
+				animation-timing-function: ease-out;
+			}
+			50% {
+				left: 12%;
+				transform : scale(0.5);
+				opacity: 0.2;
+				animation-timing-function: linear;
+			}
+			60%{
+				left: 10%;
+				transform :scale(0.4);
+				animation-timing-function: linear;
+			}
+			70%{
+				left: 5%;
+				transform :scale(0.3);
+				opacity: 0.0;
+				animation-timing-function: linear;
+			}
+			75%{
+				left: 0.2%;
+				transform :scale(0.25);
+				opacity: 0.0;
+				animation-timing-function: linear;
+			}
+			80%{
+				left: -1%;
+				transform :scale(0.3);
+				opacity: 0.0;
+				animation-timing-function: linear;
+			}
+			90%{
+				left: -10%;
+				transform :scale(0.4);
+				animation-timing-function: elinear;
+			}
+			100%{
+				left: -10%;
+				transform : scale(0.5);
+				animation-timing-function: linear;
+			}
+		}
+	
+		@keyframes rotate{
+			from{
+			transform-origin: center;
+			transform: rotate(0deg);
+			}
+			to{
+			transform-origin: center;
+			transform: rotate(360deg);
+			}	
+		}
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+		}
+
+		:root{
+			--bg-image: url("https://media.wired.com/photos/5cd5df1f2948ca2e63b090f0/master/w_1600%2Cc_limit/01_SPoW_051119.jpg");
+			
+		}
+
+		.home-title span{
+				position: relative;
+				overflow: hidden;
+				display: block;
+				line-height: 1.2;
+		}
+
+		.home-title span::after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: content-box linear-gradient(0.30turn,midnightblue,black);
+			animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+			transform: translateX(-101%);
+		}
+
+		.home-title span::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: var(--bg-image);
+			animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+			transform: translateX(0);
+		}
+
+		.home-title span:nth-of-type(1)::before,
+		.home-title span:nth-of-type(1)::after{
+			animation-delay: 1s;
+		}
+
+		.home-title span:nth-of-type(2)::before,
+		.home-title span:nth-of-type(2)::after{
+			animation-delay: 1.5s;
+		}
+
+		@keyframes a-ltr-after{
+			0% {transform: translateX(-100%)}
+			100% {transform: translateX(101%)}
+		}
+
+		@keyframes a-ltr-before{
+			0% {transform: translateX(0)}
+			100% {transform: translateX(200%)}
+		}
+				
+    </style>
+
+  <body>
+
+	<h1 ><span>Animation </h1>
+	
+	<h2 class="center" >
+		<p id = "ball2"></p>
+		<p id = "ball"></p>
+		<p id = "ball3"></p>
+	</h2>
+		<div class="star-1 stars"></div>
+		<div class="star-2 stars"></div>
+		<div class="star-3 stars"></div>
+		<div class="star-4 stars"></div>
+		<div class="star-5 stars"></div>
+		<div class="star-6 stars"></div>
+	<main>
+			<h3 class="home-title" ><span> Mes informations
+					
+			<div class= "title"> Curriculum vitæ pour la diffusion : </div>
+			<ul>
+						<li class= "choose"><a href="https://drive.google.com/file/d/1AINsz4j3PxRUp3Ev6H0oXk1Upol-xPVQ/view"> CV de diffusion</a></li>
+					</ul>
+			<p class= "title"> Vous pouvez voir mes apprentissages : </p>
+						<ul>
+							<li class= "choose" ><a href="https://www.sololearn.com/Profile/17260830/PHP"> Sololearn. </a></li>
+							<li class= "choose" ><a href="https://www.codecademy.com/users/Delperie/achievements"> Codecademy. </a></li>
+							<li class= "choose" ><a href="https://www.freecodecamp.org/delperie"> Freecodecamp. </a></li>
+							<li class= "choose" ><a href="https://github.com/Delperie-yann/cda-java-2020"> GitHub. </a></li>
+						</ul>
+			<p class= "title"> L'ensemble de mes expériences professionnelles : </p>
+					<ul>
+						<li class= "choose"><a href="https://drive.google.com/file/d/1sbVnS-ZFVNAXytsE6GrBJzdvgLpIZOnN/view"> Curriculum vitæ complet  </a></li>
+					</ul>
+					<br>
+			<div class= "title">  Vous pouvez me contacter  : </div>
+					  <ul>
+						<li class= "choose"><a href="mailto:yann_delperie@hotmail.fr"> Par mail </a></li>
+					  </ul>
+
+					<ul>
+						<bottom class= "choose"><a href="https://drive.google.com/drive/folders/1Q6v95PDvq_UWpDJMOt4_QrDnzrR4vDE8"> Retour</a></bottom>
+					</ul>
+			</span></h3>
+	</main>
+	
+  </body>
+  </html>

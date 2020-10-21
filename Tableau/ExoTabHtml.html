@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 2em;
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 900px;
+            height: 800px;
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+
+        .num {
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.8em;
+            position: relative;
+            margin-bottom: 15px;
+            
+        }
+
+        td {
+            border: 1px solid black;
+            table-layout: fixed;
+            height: 45px;
+        }
+
+        tr {
+            table-layout: fixed;
+            line-height: 20px;
+            border: 1px solid black;
+        }
+
+        th {
+            position: relative;
+            top: -4px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+
+        .green {
+
+            background-color: #e2fce2;
+            text-align: center;
+        }
+
+        .yellow {
+
+            background-color: #eef29a;
+        }
+
+        .space {
+
+            background-color: white;
+            height: 7px;
+        }
+
+        .minispace {
+
+            background-color: white;
+            height: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <table>
+        <caption>Vue synoptique de l’emploi-type</caption>
+
+
+        <colgroup>
+            <col span="2" class="green">
+            <col span="2" class="yellow">
+        </colgroup>
+
+        <tr>
+            <th scope="col">N° Fiche AT</th>
+            <th scope="col">Activités types</th>
+
+            <th scope="col">N° Fiche CP</th>
+            <th scope="col">Compétences professionnelles</th>
+        </tr>
+        <tr>
+            <td rowspan="9" class="num">1</td>
+            <td rowspan="9">Concevoir et développer des composants d'interface utilisateur en intégrant les
+                recommandations de
+                sécurité</td>
+            <td class="num" >1</td>
+            <td class="yellow">Maquetter une application</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr >
+            <td class="num">2</td>
+            <td>Développer une interface utilisateur de type desktop</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="num">3</td>
+            <td>Développer des composants d’accès aux donnée</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="num">4</td>
+            <td>Développer la partie front-end d’une interface utilisateur web</td>
+
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="yellow num">5</td>
+            <td>Développer la partie back-end d’une interface utilisateur web</td>
+        </tr>
+        <tr>
+            <td class="space" colspan="4"></td>
+
+        </tr>
+
+        <tr>
+            <td rowspan="5" class="num">2</td>
+            <td rowspan="5">Concevoir et développer la persistance des données en intégrant les recommandations de sécurité</td>
+            <td class="num">6</td>
+            <td>Concevoir une base de données</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="num">7</td>
+            <td>Mettre en place une base de données</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr >
+            <td class="num">8</td>
+            <td>Développer des composants dans le language d’une base de données</td>
+        </tr>
+        <tr>
+            <td class="space" colspan="4">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="14" class="num">3</td>
+            <td rowspan="14">Concevoir et développer une application multicouche répartie en intégrant les
+                recommandations de sécurité</td>
+            <td class="num">9</td>
+            <td>Collaborer à la gestion d’un projet informatique et à l’organisation de
+                l’environnement de
+                développement</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="num">10</td>
+            <td>Concevoir une application</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="num">11</td>
+            <td>Développer des composants métier</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="num">12</td>
+            <td>Construire une application organisée en couches</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="num">13</td>
+            <td>Développer une application mobile</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="num">14</td>
+            <td>Préparer et exécuter les plans de tests d’une application</td>
+        </tr>
+        <tr>
+            <td class="minispace"></td>
+        </tr>
+        <tr>
+            <td class="num">15</td>
+            <td>Préparer et exécuter le déploiement d’une application</td>
+        </tr>
+    </table>
+</body>
+
+</html>
