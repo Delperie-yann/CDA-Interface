@@ -27,9 +27,10 @@ main{
 
 }
 #picture{
-    margin-block-start: 150px;
     height: 500px;
-    width: 700px;
+    width: 800px;
+    margin-block-start: 150px;
+    
     background-color: white;
     border: 1px solid black;
 }
@@ -40,9 +41,9 @@ main{
     
 }
 .logo{
-    background-color: tomato;
-    height: 100px;
-    width: 100px;
+    background-color: white;
+    height: 112px;
+    width: 180px;
 }
 .dropdown-content {
     display: none;
