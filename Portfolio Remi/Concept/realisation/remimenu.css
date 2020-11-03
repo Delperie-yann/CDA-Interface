@@ -1,7 +1,7 @@
 body{
     width: 100%;
     height: 100%;
-    background-color: #284B63;
+    background-color: #072137;
    
     margin: auto;
    
@@ -9,7 +9,7 @@ body{
 header{
     display: flex;
     align-items: center;
-    background-color: #143601; 
+    background-color: #4AC2D7; 
     justify-content: center;
     height: 50px;
     color: white;
@@ -84,3 +84,7 @@ p{
     width: auto;
 
     }
+a{
+    color:#072137;
+
+}
