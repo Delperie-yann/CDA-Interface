@@ -1,0 +1,369 @@
+#sectionHaut{           
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns:  1fr ; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "a "
+    "b "
+    "c";
+    /*animation: fondu 5s infinite alternate;*/
+    background-image:url("../images/slide_1.jpg");
+    transition: 3s;
+}  
+#fleches{
+    grid-area: a; 
+    justify-content :flex-end;
+    display: inline-flex;
+    margin: 50px;
+    color: rgb(61, 48, 48);   
+    vertical-align: middle;
+}
+#flecheGauche, #flecheDroite{    
+    background-color: rgba(255, 255,255, 0.2);
+    width: 60px;
+    height: 60px;
+    margin: 0 20px 0 0;
+    text-align: center;
+    cursor:  pointer;
+    font-size: 50px;
+}
+#play{
+    background-color: rgba(255, 255,255, 0.2);
+    display: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor:  pointer;
+    margin: 0 20px 0 0;
+}
+#play span{
+    display : none;
+    padding-top: 10px;
+}
+#play img{
+    padding-top: 7px;
+}
+#play:hover span{
+    display:block;
+    
+}
+#sectionHaut h1{
+    grid-area: b; 
+    color: white;
+    font-size: 80pt;
+    text-align: center;
+    
+}
+#more{
+    grid-area: c; 
+    justify-content : flex-end;
+    display: inline-flex;
+    margin: auto 10px auto 10px;
+}
+#more a{
+    text-decoration: none;
+    padding: 12px;
+    background-color: white; 
+    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+}
+#more a:hover{
+    background-color: #2234ae;
+    color: white;
+}
+.boudureRouge{
+    background-color: #ee161f;
+    height: 3px;
+    width: 100%;
+}
+#grosProjets{
+    text-align: center;
+    background: linear-gradient(to right,#0a103f, #2234ae);
+    padding-bottom: 30px;
+}
+#lesGrosProjets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+article h3{
+    color : black;
+}
+#lesGrosProjets article{
+    margin-top: 30px;
+    background-color: #f0f0ff;
+    border-radius: 30px;
+    color: white;
+}
+#lesGrosProjets1{
+    background-image: url(../images/featured_1.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesGrosProjets2{
+    background-image: url(../images/featured_2.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesGrosProjets3{
+    background-image: url(../images/featured_3.jpg);  
+    height: 360px;
+    width: 306px;
+}
+.p1{
+    font-size: 10pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 20% 10px 10px 10%;
+    color: white;
+}
+.p2{
+    font-size: 8pt; 
+    color: black;
+    margin: 10px 0 10px 0;
+}
+#petitsProjets{
+    background: linear-gradient(to right,#0a103f, #2234ae);
+    text-align: center;
+    padding-bottom: 30px;
+}
+#lesPetitsProjets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+}
+#lesPetitsProjets article {
+    margin-top: 30px;
+    margin-right: 20px;
+    background-color: #f0f0ff;
+    border-radius: 30px;
+    color: white;
+}
+#lesPetitsProjets1{
+    background-image: url(../images/featured_1.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesPetitsProjets2{
+    background-image: url(../images/featured_2.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesPetitsProjets3{
+    background-image: url(../images/featured_3.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesPetitsProjets4{
+    background-image: url(../images/featured_2.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesPetitsProjets5{
+    background-image: url(../images/featured_3.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesPetitsProjets6{
+    background-image: url(../images/featured_1.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesPetitsProjets7{
+    background-image: url(../images/featured_3.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesPetitsProjets8{
+    background-image: url(../images/featured_2.jpg);  
+    height: 360px;
+    width: 306px;
+}
+#lesPetitsProjets9{
+    background-image: url(../images/featured_1.jpg);  
+    height: 360px;
+    width: 306px;
+}
+.visible2, .visible3{
+    display: none;
+}
+.visible1, .visible2, .visible3{
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+.cercle2{   
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #fff;
+    background-color: transparent; 
+}
+#navPetitsProjets{
+    margin-top: 15px;
+    display: inline-flex;
+}
+#navPetitsProjets ul {
+    list-style:none;
+}
+#aPropos{
+    text-align: center;
+    background: linear-gradient(to right,#0a103f, #2234ae);
+    padding-bottom: 30px;
+}
+#lesAPropos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+article h3{
+    color : black;
+}
+#lesAPropos article{
+    margin-top: 30px;
+    background-color: #f0f0ff;
+    border-radius: 30px;
+    color: white;
+}
+#lesAPropos1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/featured_1.jpg);
+   
+    height: 360px;
+    width: 306px;
+}
+#lesAPropos2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/experiencepass/icone1.jpg); 
+    background-size: 100%;  
+    height: 360px;
+    width: 306px;
+}
+#lesAPropos3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/mesvaleurs/equipe.png);  
+  
+    height: 360px;
+    width: 306px;
+}
+#blog{
+    text-align: center;
+    background: linear-gradient(to right,#0a103f, #2234ae);
+    padding-bottom: 30px;
+}
+#articleBlog{  
+    display: flex;
+    padding: 30px;
+}
+#articleBlog img {
+    padding: 0 50px 0 50px;
+    flex: 2;
+}
+.cadretexte{
+    margin : 0 50px 0 50px;
+    background-color: #F0f0ff;
+    padding: 10px;
+    border-radius: 20px;
+}
+#articleBlog p {
+    padding: 0 50px 0 50px;
+    flex: 6;
+    margin-top: 60px;
+    text-align: justify;     
+}
+#contact{
+    text-align: center;
+    background: linear-gradient(to right,#0a103f, #2234ae);
+    padding: 0 30px 200px 30px;
+}
+#grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 200px 44px;
+    gap: 30px 10px;
+    grid-template-areas:
+        "name email sujet"
+        "message message message"
+        "bouton bouton bouton";
+}
+#grid-form div {
+    margin: 0px 30px 0px 10px;    
+}
+#grid-form input {
+    width: 100%;
+    height: 40px;   
+}
+#grid-form textarea{
+    height: 200px;
+    max-height: 250px;
+    width: 100%;
+    max-width: 100%;
+}
+#grid-form button{
+    height: 44px;
+    line-height: 24px;
+    width: 100%;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    margin-right: -10px;
+    background-color: #2234ae;
+}
+#grid-form button:hover{
+    background-color: #fff;
+}
+.name { grid-area: name;}
+.email { grid-area: email; }
+.sujet { grid-area: sujet; }
+.message { grid-area: message; }
+.bouton { grid-area: bouton; }
+
+@media screen and (max-width: 750px) {
+    .main-body {
+        grid-template-columns: 1fr;
+        grid-template-rows:  minmax(50px, auto) 1fr;
+        grid-template-areas: "menu" "main";
+        margin: auto;
+    }
+    #menu {
+        position: inherit;
+        font-size: 0.6rem;
+    }
+    #lesGrosProjets , #lesPetitsProjets, #lesAPropos{   
+        flex-direction: column;
+        text-align: center;  
+    }
+    #articleBlog{
+        flex-direction: column;
+        padding: 0px;
+    }
+    #lesGrosProjets, #lesPetitsProjets, #lesAPropos{
+        align-items: center;
+    }
+    #lesGrosProjets article, #lesPetitsProjets article, #aPropos article{
+        margin-top: 5px;
+        border-radius: 20px;
+        width: 85%;
+        margin-right: 0;
+    }
+    #lesGrosProjets article a div, #lesPetitsProjets article a div, #aPropos article a div {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;  
+    }
+    #contact{
+        padding-bottom: 20px;
+    }
+}

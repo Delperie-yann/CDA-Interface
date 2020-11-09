@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'dunkin';
+    src: url(../font/dunkin/Dunkin.otf);
+}
+@font-face {
+    font-family: 'monicha';
+    src: url(../font/monicha/Monicha.otf);
+}
+html,
+body {  
+    font-family: dunkin, arial, sans-serif;
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {         
+    font-family: monicha, arial, sans-serif;
+}
+h2{
+    color: white;
+    font-size: 40pt;
+    margin-top: 15px;
+}
+h3{
+    font-size: 25pt;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.main-body{   
+    display: grid;
+    grid-template-columns:  minmax(270px, auto) 1fr;
+    grid-template-areas: "menu main";
+}
+.navhaut{
+    display:none;
+}
+#menu {
+    font-size: 16px;
+    list-style: none;   
+    background-color: #0A103F;
+    height: 100%;
+    padding: 10px;
+    grid-area: "menu";
+    position: fixed;
+}
+#menu ul {
+    list-style: none;
+    margin-top: 50px;
+}
+#menu ul li{
+    margin: 30px;
+}
+#menu ul li a:link{
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+}
+#menu ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
+#menu ul li a:active{
+    color: white;
+    text-decoration: none;
+}
+.cercle{   
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #fff;
+}
+.valide{
+    height: 1px;
+    left: 0;
+    margin-top: 8px;
+    margin-right: 5px;
+    border: 1px solid white;
+    width: 10px;
+    display: none;
+}
+#menu > div {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+#menu > div a{
+    color: #fff;
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+.boudureRouge{
+    background-color: #ee161f;
+    height: 3px;
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .navhaut{
+        display: block;
+        background-color: #0A103F;
+        width: 100%;
+        height: 50px;
+    }
+    .icone{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        top: 10px;
+    }
+    .icone div{
+        content: ' ';
+        margin: 3px;
+        width: 25px;
+        height: 1px;
+        border: 1px solid #ffffff;
+        color: white; 
+    }
+    #menu{
+        display: none;         
+    }
+}
