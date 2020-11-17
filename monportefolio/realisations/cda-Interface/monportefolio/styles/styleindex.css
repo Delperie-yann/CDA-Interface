@@ -7,11 +7,10 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
     "a "
-    "b "
-    "c";
+;
     /*animation: fondu 5s infinite alternate;*/
     background-image:url("../images/slide_1.jpg");
-    transition: 3s;
+ 
 }  
 #fleches{
     grid-area: a; 
@@ -100,12 +99,18 @@ article h3{
     color: white;
 }
 #lesGrosProjets1{
-    background-image: url(../images/featured_1.jpg);  
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url(../images/projetremi/imagepresentation.jpg);  
     height: 360px;
     width: 306px;
 }
 #lesGrosProjets2{
-    background-image: url(../images/featured_2.jpg);  
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url(../images/calculatrice/Projet.jpg);  
     height: 360px;
     width: 306px;
 }
@@ -146,12 +151,18 @@ article h3{
     color: white;
 }
 #lesPetitsProjets1{
-    background-image: url(../images/featured_1.jpg);  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/petitprojet/mariton.png);  
     height: 360px;
     width: 306px;
 }
 #lesPetitsProjets2{
-    background-image: url(../images/featured_2.jpg);  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/petitprojet/ecosia.png);  
     height: 360px;
     width: 306px;
 }
